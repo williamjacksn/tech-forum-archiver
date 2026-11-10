@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>How are errors in text handled? - Tech Forum</title>
+
+	<script type="text/javascript" src="/ruxitagentjs_ICANVfqru_10349261020121938.js" data-dtconfig="rid=RID_2093244529|rpid=1283109717|domain=churchofjesuschrist.org|reportUrl=/rb_bf68908sys|app=ea7c4b59f27d43eb|srtbv=4|cssm=n|owasp=1|featureHash=ICANVfqru|rdnt=1|uxrgce=1|cuc=aslc5mxn|mel=100000|dpvc=1|lastModification=1794190204503|tp=500,50,0|srbbv=3|agentUri=/ruxitagentjs_ICANVfqru_10349261020121938.js"></script><link rel="alternate" type="application/atom+xml" title="Feed - Tech Forum" href="/forum/feed">	<link rel="alternate" type="application/atom+xml" title="Feed - News" href="/forum/feed/news">	<link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="/forum/feed/forums">	<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/forum/feed/topics">	<link rel="alternate" type="application/atom+xml" title="Feed - Active Topics" href="/forum/feed/topics_active">	<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Gospel Library" href="/forum/feed/forum/101">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - How are errors in text handled?" href="/forum/feed/topic/5278">	
+	<link rel="canonical" href="https://tech.churchofjesuschrist.org/forum/viewtopic.php?t=5278">
+
+<!--
+	phpBB style name: prosilverchurch
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by: Tim Riker ( https://rikers.org/ )
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=153" rel="stylesheet">
+<link href="./styles/prosilver/theme/stylesheet.css?assets_version=153" rel="stylesheet">
+<link href="./styles/prosilverchurch/theme/stylesheet.css?assets_version=153" rel="stylesheet">
+<link href="./styles/prosilver/theme/en_us/stylesheet.css?assets_version=153" rel="stylesheet">
+<!-- link href="./styles/prosilverchurch/theme/en_us/stylesheet.css?assets_version=153" rel="stylesheet" -->
+<script src="./styles/prosilverchurch/template/common.js?assets_version=153" async></script>
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilverchurch/theme/tweaks.css?assets_version=153" rel="stylesheet">
+<![endif]-->
+
+
+        <script>
+        window.platformConfig = {
+            dataConfig: {
+                lang: 'eng',
+                langs: ['ara','deu','eng','fra','heb','ita','jpn','kor','por','rus','spa','zho'],
+                note: 'Tech Forum',
+                langMenu: {
+                    links: [
+                        { title: 'Deutsch', href: '/forum/viewtopic.php?t=5278&lang=deu' },
+                        { title: 'English', href: '/forum/viewtopic.php?t=5278&lang=eng' },
+                        { title: 'Español', href: '/forum/viewtopic.php?t=5278&lang=spa' },
+                        { title: 'Français', href: '/forum/viewtopic.php?t=5278&lang=fra' },
+                        { title: 'Italiano', href: '/forum/viewtopic.php?t=5278&lang=ita' },
+                        { title: 'Português (Brasil)', href: '/forum/viewtopic.php?t=5278&lang=por' },
+                        { title: 'Русский', href: '/forum/viewtopic.php?t=5278&lang=rus' },
+                        { title: 'עִברִית', href: '/forum/viewtopic.php?t=5278&lang=heb' },
+                        { title: 'العربية', href: '/forum/viewtopic.php?t=5278&lang=ara' },
+                        { title: '日本語', href: '/forum/viewtopic.php?t=5278&lang=jpn' },
+                        { title: '한국어', href: '/forum/viewtopic.php?t=5278&lang=kor' },
+                        { title: '中文', href: '/forum/viewtopic.php?t=5278&lang=zho' },
+                    ]
+                },
+            },
+            headerConfig: {
+                isSlim: true,
+                slimAppName: 'Tech Forum - Community Discussion of Church Technology',
+                slimAppLink: './index.php',
+            },
+            searchConfig: {
+                searchEndpoint: 'search.php',
+                searchQueryParam: 'keywords',
+                searchPlaceholderText: "Search this forum…",
+                searchPath: 'https://tech.churchofjesuschrist.org/forum/',
+            },
+            footerConfig: {
+                noMargin: true,
+                footerLinks: {
+                    appendFooterLinks: true,
+                    replaceFooterLinks: false,
+                    mainLinks: [
+                        {
+                            title: "Wiki",
+                            href: "../wiki/"
+                                                                        }
+                    ],
+                }
+            },
+        }
+    </script>
+    <script src="//www.churchofjesuschrist.org/services/platform/v4/index.js" async></script>
+    <!-- Widget JavaScript bundle -->
+    <script src='https://cloud.google.com/ai/gen-app-builder/client?hl=en_us'></script>
+    <gen-search-widget configId='8b076e6c-38b8-4eda-94d4-3c9f7caf3c67' triggerId='mobileSearchButton'>
+    </gen-search-widget>
+    	
+<link href="./ext/kasimi/postnumbers/styles/prosilver/theme/postnumbers.css?assets_version=153" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/collapsiblecategories/styles/all/theme/collapsiblecategories.css?assets_version=153" rel="stylesheet" media="screen">
+<link href="./ext/phpbb/pages/styles/prosilver/theme/pages_common.css?assets_version=153" rel="stylesheet" media="screen">
+
+
+<!-- churchofjesuschrist/overall_header_stylesheets_after -->
+<style>
+.skiptranslate, .goog-te-banner-frame, #google_translate_element {
+	display: none;
+}
+
+body {
+	top: 0px !important;
+}
+
+.transactive {
+	background-color: pink;
+	text-shadow: 2px 2px 4px;
+	font-weight: bold;
+}
+
+.notranslate {
+	/* animation: pulse 2s linear infinite; */
+}
+
+@keyframes pulse {
+	50% {
+		opacity: 10%;
+	}
+}
+
+.quick-login, .responsive-search, .footer-link, .copyright .footer-row[role="menu"] {
+	display: none;
+}
+</style>
+	
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="./index.php" title="Forum">
+					<span class="site_logo"></span>
+				</a>
+				<h1>Tech Forum</h1>
+				<p>Community Discussion of Church Technology</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu hidden" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+					
+										<li class="separator"></li>
+
+								<li class="small-icon icon-pages icon-page-code-of-conduct">
+			<a href="/forum/code-of-conduct" role="menuitem">
+				<span>Code of Conduct</span>
+			</a>
+		</li>
+					</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/forum/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+		<!-- churchofjesuschrist/overall_header_navigation_append -->
+<li data-last-responsive="true">
+	<a href="../wiki/" title="Wiki" role="menuitem">
+		<i class="icon fa-external-link fa-fw" aria-hidden="true"></i><span>Wiki</span>
+	</a>
+</li>
+				
+			<li class="rightside"  data-skip-responsive="true">
+			<a href="./ucp.php?mode=login&amp;redirect=viewtopic.php%3Ft%3D5278" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+				
+		
+		<li class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+			
+							<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope><a itemprop="item" href="./index.php" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Forum</span></a><meta itemprop="position" content="1" /></span>
+
+											
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="18"><a itemprop="item" href="./viewforum.php?f=18"><span itemprop="name">Church Technology for Members</span></a><meta itemprop="position" content="2" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="108"><a itemprop="item" href="./viewforum.php?f=108"><span itemprop="name">Mobile Applications</span></a><meta itemprop="position" content="3" /></span>
+															
+								<span class="crumb" itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope data-forum-id="101"><a itemprop="item" href="./viewforum.php?f=101"><span itemprop="name">Gospel Library</span></a><meta itemprop="position" content="4" /></span>
+							
+					</li>
+
+		<!-- churchofjesuschrist/overall_header_breadcrumbs_after -->
+<li class="transtoggle rightside notranslate" title="Google Translate">
+	<a href="http://translate.google.com/">
+		<i class="icon fa-google fa-fw" aria-hidden="true"></i>
+	</a>
+	<a href="javascript:toggleTrans();"
+			title="Translate - by Google" role="menuitem">
+		<span>Translate</span>
+	</a>
+</li>
+
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="./viewtopic.php?t=5278">How are errors in text handled?</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">Any discussions around the Gospel Library App on various mobile and electronic devices.<br /></div>
+
+
+<div class="action-bar bar-top">
+	
+			<a href="./posting.php?mode=reply&amp;t=5278" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?t=5278&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p45661" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile45661">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=9492" class="avatar"><img src="//gravatar.com/avatar/08a98b786db4418b5fffa2087ca77b7f9e01cc24746e4d1c5b210ae5be9f630b?s=90" width="90" height="90" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=9492" class="username">williamjackson</a>							</dt>
+
+						<dd class="profile-rank">Member</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> 122</dd>		<dd class="profile-joined"><strong>Joined:</strong> Thu Apr 22, 2010 8:20 pm</dd>		
+		
+																<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Austin, TX, USA</dd>
+							
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger" title="Contact williamjackson">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact williamjackson</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="https://blog.subtlecoolness.com/" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content45661">
+
+					<h3 class="first">
+						<a href="./viewtopic.php?p=45661#p45661">How are errors in text handled?</a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=45661" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author post-number post-number-phpbb post-number-bold">
+	<a href="#p45661" title="Copy post link to clipboard">#1</a>
+</p>
+			<p class="author">
+									<a class="unread" href="./viewtopic.php?p=45661#p45661" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=9492" class="username">williamjackson</a></strong> &raquo; </span><time datetime="2010-07-02T19:51:20+00:00">Fri Jul 02, 2010 1:51 pm</time>
+			</p>
+			
+			
+			
+			
+			<div class="content">Last night while we were studying, my wife found a typo in the Gospel Principles book. You can find it in your copy on page 147. It is also in every electronic copy I can find, such as:<br>
+<br>
+Gospel Library for iPhone<br>
+<a href="http://www.lds.org/ldsorg/v/index.jsp?hideNav=1&amp;locale=0&amp;sourceId=d9b01f7962d43210VgnVCM100000176f620a____&amp;vgnextoid=5158f4b13819d110VgnVCM1000003a94610aRCRD" class="postlink">http://www.lds.org/ldsorg/v/index.jsp?h ... 94610aRCRD</a><br>
+<a href="http://www.lds.org/languages/pdf/gospelprinciples/GP_2010_Unit07_27_25_Fasting__eng_.pdf" class="postlink">http://www.lds.org/languages/pdf/gospel ... __eng_.pdf</a><br>
+<br>
+In Chapter 25 (Fasting), under the section titled "We Are Blessed When We Fast", Isaiah 58:8-9 is quoted as saying, "... the glory of the Lord shall be thy reward ...". The correct word from the scriptures is "rereward". (At least, that's what Gospel Library tells me. But can it be trusted? <img class="smilies" src="./images/smilies/icon_e_wink.gif" width="15" height="17" alt=";)" title="Wink">)<br>
+<br>
+I already reported this to <a href="mailto:cur-development@ldschurch.org">cur-development@ldschurch.org</a> as instructed in the manual, but now I'm curious what the text source is for the Gospel Library application.<br>
+<br>
+If the text source is updated to correct something like this, will Gospel Library give any indication of updated material when I go to Manage Library?</div>
+
+			
+			
+									
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+				<div id="p45662" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile45662">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=219" class="avatar"><img class="avatar" src="./download/file.php?avatar=219_1355256303.jpg" width="100" height="100" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=219" class="username">mkmurray</a>							</dt>
+
+						<dd class="profile-rank">Senior Member</dd>			
+		<dd class="profile-posts"><strong>Posts:</strong> 3266</dd>		<dd class="profile-joined"><strong>Joined:</strong> Tue Jan 23, 2007 9:56 pm</dd>		
+		
+																<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Utah</dd>
+							
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger" title="Contact mkmurray">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact mkmurray</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="http://mkmurray.com/" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content45662">
+
+					<h3 >
+						<a href="./viewtopic.php?p=45662#p45662"></a>
+		</h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;p=45662" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author post-number post-number-phpbb post-number-bold">
+	<a href="#p45662" title="Copy post link to clipboard">#2</a>
+</p>
+			<p class="author">
+									<a class="unread" href="./viewtopic.php?p=45662#p45662" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=219" class="username">mkmurray</a></strong> &raquo; </span><time datetime="2010-07-02T20:41:28+00:00">Fri Jul 02, 2010 2:41 pm</time>
+			</p>
+			
+			
+			
+			
+			<div class="content"><blockquote><div><cite>subtlecoolness wrote:</cite>Last night while we were studying, my wife found a typo in the Gospel Principles book. You can find it in your copy on page 147. It is also in every electronic copy I can find, such as:<br>
+<br>
+Gospel Library for iPhone<br>
+<a href="http://www.lds.org/ldsorg/v/index.jsp?hideNav=1&amp;locale=0&amp;sourceId=d9b01f7962d43210VgnVCM100000176f620a____&amp;vgnextoid=5158f4b13819d110VgnVCM1000003a94610aRCRD" class="postlink">http://www.lds.org/ldsorg/v/index.jsp?h ... 94610aRCRD</a><br>
+<a href="http://www.lds.org/languages/pdf/gospelprinciples/GP_2010_Unit07_27_25_Fasting__eng_.pdf" class="postlink">http://www.lds.org/languages/pdf/gospel ... __eng_.pdf</a><br>
+<br>
+In Chapter 25 (Fasting), under the section titled "We Are Blessed When We Fast", Isaiah 58:8-9 is quoted as saying, "... the glory of the Lord shall be thy reward ...". The correct word from the scriptures is "rereward". (At least, that's what Gospel Library tells me. But can it be trusted? <img class="smilies" src="./images/smilies/icon_e_wink.gif" width="15" height="17" alt=";)" title="Wink">)<br>
+<br>
+I already reported this to <a href="mailto:cur-development@ldschurch.org">cur-development@ldschurch.org</a> as instructed in the manual, but now I'm curious what the text source is for the Gospel Library application.<br>
+<br>
+If the text source is updated to correct something like this, will Gospel Library give any indication of updated material when I go to Manage Library?</div></blockquote>
+Having worked a little bit with the official scripture data provided to the volunteer developers who work on the mobile apps, I assume that an error in the text is probably because of the official scripture source XML that the Church uses (and the same source they provided to the Community Projects).  The reason I say this is that I got the impression that the Church tries to use this same source content everywhere in order to be consistent.  If I remember right, it seems like scriptures.lds.org were done before this source content had been designed, but that they would try to use it the next opportunity they could.</div>
+
+			
+			
+									
+						
+										
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="./posting.php?mode=reply&amp;t=5278" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="./viewtopic.php?t=5278&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?t=5278">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="Go" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="./viewforum.php?f=101" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Gospel Library”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=3" class="jumpbox-cat-link"> <span> What's New</span></a></li>
+																<li><a href="./viewforum.php?f=4" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Announcements &amp; Policies</span></a></li>
+																<li><a href="./viewforum.php?f=161" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Virtual Meetings</span></a></li>
+																<li><a href="./viewforum.php?f=17" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; In The News</span></a></li>
+																<li><a href="./viewforum.php?f=16" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Links &amp; Resources</span></a></li>
+																<li><a href="./viewforum.php?f=18" class="jumpbox-cat-link"> <span> Church Technology for Members</span></a></li>
+																<li><a href="./viewforum.php?f=30" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Main Church Website</span></a></li>
+																<li><a href="./viewforum.php?f=110" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Calendar</span></a></li>
+																<li><a href="./viewforum.php?f=111" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Ward Directory and Map</span></a></li>
+																<li><a href="./viewforum.php?f=112" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Leader and Clerk Resources</span></a></li>
+																<li><a href="./viewforum.php?f=19" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Notes and Journal, and Online Scriptures</span></a></li>
+																<li><a href="./viewforum.php?f=156" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Online Donations</span></a></li>
+																<li><a href="./viewforum.php?f=124" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Beta Testing</span></a></li>
+																<li><a href="./viewforum.php?f=133" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Beta Calendar</span></a></li>
+																<li><a href="./viewforum.php?f=135" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Beta Directory</span></a></li>
+																<li><a href="./viewforum.php?f=130" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Beta Lesson Schedules</span></a></li>
+																<li><a href="./viewforum.php?f=125" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Beta Maps</span></a></li>
+																<li><a href="./viewforum.php?f=131" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Beta Newsletter</span></a></li>
+																<li><a href="./viewforum.php?f=137" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Beta Clerk Resources</span></a></li>
+																<li><a href="./viewforum.php?f=40" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Other Websites</span></a></li>
+																<li><a href="./viewforum.php?f=108" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Mobile Applications</span></a></li>
+																<li><a href="./viewforum.php?f=101" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Gospel Library</span></a></li>
+																<li><a href="./viewforum.php?f=102" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Android Gospel Library</span></a></li>
+																<li><a href="./viewforum.php?f=103" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; iPhone/iPad Gospel Library</span></a></li>
+																<li><a href="./viewforum.php?f=141" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Gospel Library for Windows</span></a></li>
+																<li><a href="./viewforum.php?f=158" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Gospel Living App</span></a></li>
+																<li><a href="./viewforum.php?f=157" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Gospel Media</span></a></li>
+																<li><a href="./viewforum.php?f=115" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Member Tools</span></a></li>
+																<li><a href="./viewforum.php?f=116" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Android Member Tools App</span></a></li>
+																<li><a href="./viewforum.php?f=118" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; iPhone/iPad Member Tools App</span></a></li>
+																<li><a href="./viewforum.php?f=120" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Mormon Radio Channel</span></a></li>
+																<li><a href="./viewforum.php?f=92" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Church Account</span></a></li>
+																<li><a href="./viewforum.php?f=88" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Family History</span></a></li>
+																<li><a href="./viewforum.php?f=57" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; FamilySearch Products</span></a></li>
+																<li><a href="./viewforum.php?f=58" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; FamilySearch Family Tree Application</span></a></li>
+																<li><a href="./viewforum.php?f=143" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; FamilySearch Indexing</span></a></li>
+																<li><a href="./viewforum.php?f=144" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; FamilySearch Centers</span></a></li>
+																<li><a href="./viewforum.php?f=65" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Genealogy Industry Issues</span></a></li>
+																<li><a href="./viewforum.php?f=74" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Software Development</span></a></li>
+																<li><a href="./viewforum.php?f=28" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Other Member Technologies</span></a></li>
+																<li><a href="./viewforum.php?f=99" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Church Historical Timeline</span></a></li>
+																<li><a href="./viewforum.php?f=32" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Emerging Technologies</span></a></li>
+																<li><a href="./viewforum.php?f=83" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Accessibility to Church Technology Products</span></a></li>
+																<li><a href="./viewforum.php?f=126" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; ePublishing</span></a></li>
+																<li><a href="./viewforum.php?f=127" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Audiobooks</span></a></li>
+																<li><a href="./viewforum.php?f=128" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; E-Books</span></a></li>
+																<li><a href="./viewforum.php?f=129" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Interactive Books &amp; Magazines</span></a></li>
+																<li><a href="./viewforum.php?f=13" class="jumpbox-cat-link"> <span> Community Discussions</span></a></li>
+																<li><a href="./viewforum.php?f=14" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; General Discussions</span></a></li>
+																<li><a href="./viewforum.php?f=91" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Family Safety with Technology</span></a></li>
+																<li><a href="./viewforum.php?f=42" class="jumpbox-cat-link"> <span> Clerk Support</span></a></li>
+																<li><a href="./viewforum.php?f=43" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Getting Started for New Clerks</span></a></li>
+																<li><a href="./viewforum.php?f=45" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Reports and Forms</span></a></li>
+																<li><a href="./viewforum.php?f=46" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Local Unit Finance</span></a></li>
+																<li><a href="./viewforum.php?f=47" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Membership Help</span></a></li>
+																<li><a href="./viewforum.php?f=50" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; General Clerk Discussions</span></a></li>
+																<li><a href="./viewforum.php?f=145" class="jumpbox-cat-link"> <span> Meetinghouse Technologies</span></a></li>
+																<li><a href="./viewforum.php?f=51" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Meetinghouse Internet</span></a></li>
+																<li><a href="./viewforum.php?f=48" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Clerk Computers</span></a></li>
+																<li><a href="./viewforum.php?f=87" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Printers, Copiers, and Multi-Function Devices</span></a></li>
+																<li><a href="./viewforum.php?f=86" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; FAQs for Local Unit Copier Program</span></a></li>
+																<li><a href="./viewforum.php?f=146" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Broadcasts and Conferences</span></a></li>
+																<li><a href="./viewforum.php?f=159" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Interactive Virtual Meetings</span></a></li>
+																<li><a href="./viewforum.php?f=27" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Non-Interactive Webcasting</span></a></li>
+																<li><a href="./viewforum.php?f=160" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Stake Conference with Remote Participants</span></a></li>
+																<li><a href="./viewforum.php?f=151" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Satellite</span></a></li>
+																<li><a href="./viewforum.php?f=152" class="jumpbox-sub-link"><span class="spacer"></span><span class="spacer"></span> <span>&#8627; &nbsp; Receiving Internet Broadcasts</span></a></li>
+																<li><a href="./viewforum.php?f=140" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Meetinghouse Audio</span></a></li>
+																<li><a href="./viewforum.php?f=191" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Kindoo</span></a></li>
+																<li><a href="./viewforum.php?f=147" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Phones</span></a></li>
+																<li><a href="./viewforum.php?f=150" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Rich Media in Lessons and Training</span></a></li>
+																<li><a href="./viewforum.php?f=148" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Other Meetinghouse Technologies</span></a></li>
+																<li><a href="./viewforum.php?f=149" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Stake Technology Specialist Training</span></a></li>
+																<li><a href="./viewforum.php?f=93" class="jumpbox-cat-link"> <span> Audiovisual Media and Emerging Technologies</span></a></li>
+																<li><a href="./viewforum.php?f=94" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Getting Started</span></a></li>
+																<li><a href="./viewforum.php?f=95" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Digital Media</span></a></li>
+																<li><a href="./viewforum.php?f=96" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; General Media Discussions</span></a></li>
+																<li><a href="./viewforum.php?f=22" class="jumpbox-cat-link"> <span> Help &amp; Feedback</span></a></li>
+																<li><a href="./viewforum.php?f=29" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Help with this forum</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Forum</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="America/Denver">UTC-07:00</span></li>
+					<li class="small-icon icon-pages icon-page-code-of-conduct rightside">
+			<a href="/forum/code-of-conduct" role="menuitem">
+				<span>Code of Conduct</span>
+			</a>
+		</li>
+						<li class="rightside">
+				<a href="/forum/user/delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+														</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="./ucp.php?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="./ucp.php?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script src="./assets/javascript/jquery-3.7.1.min.js?assets_version=153"></script>
+<script src="./assets/javascript/core.js?assets_version=153"></script>
+
+
+<script>
+function toggleTrans() {
+	//console.log($('body').css('top'));
+	if($('.transtoggle').hasClass('transactive')) {
+		//console.log('transDisable');
+		$('iframe.skiptranslate').contents().find('a img').last().click();
+		$('.transtoggle').removeClass('transactive');
+	} else {
+		//console.log('transEnable');
+		$('iframe.skiptranslate').contents().find('td a div span.text').eq(1).click();
+		$('.transtoggle').addClass('transactive');
+	}
+
+}
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({
+		// pageLanguage: 'auto',
+		MultilanguagePage: true,
+		// ar,de,en,en_us,es,fr,he,ja,ko,pt,ru,sp,zh-CN
+		includedLanguages: 'en',
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+		autoDisplay: false
+	}, 'google_translate_element');
+	setTimeout(() => {
+		if($('html').hasClass('translated-ltr') || $('html').hasClass('translated-rtl')) {
+			$('.transtoggle').addClass('transactive');
+		}
+	}, 2000);
+}
+</script>
+<script>
+	$(window).on('load',function() {
+			// should already be removed in prosilverchurch
+		$('.headerbar').hide();
+		// header/footer bug
+		$("#slimLogo", $("platform-header")[0].shadowRoot).css({"font-family": "var(--serif)"});
+			$("platform-header").addClass('notranslate');
+		$("platform-footer").addClass('notranslate');
+		$("#page-footer").addClass('notranslate');
+		$(".headerbar").addClass('notranslate');
+		$("#nav-main").addClass('notranslate');
+		$(".headerspace").addClass('notranslate');
+		$(".stat-block").addClass('notranslate');
+		$(".jumpbox-return").addClass('notranslate');
+		$(".action-bar").addClass('notranslate');
+		$(".post-buttons").addClass('notranslate');
+		$(".time").addClass('notranslate');
+		$(".ucp-title").addClass('notranslate');
+		$("#cp-menu").addClass('notranslate');
+		$("#tabs").addClass('notranslate');
+		$(".display-actions").addClass('notranslate');
+		$(".display-options").addClass('notranslate');
+		$(".right-box").addClass('notranslate');
+		$(".left-box").addClass('notranslate');
+		$(".posts").addClass('notranslate');
+		$(".views").addClass('notranslate');
+		$(".topic-poster").addClass('notranslate');
+		$(".postprofile").addClass('notranslate');
+		$(".inner p").addClass('notranslate');
+		$(".panel-container h2").addClass('notranslate');
+		$(".header").addClass('notranslate');
+		$(".lastpost").addClass('notranslate');
+		$(".back2top").addClass('notranslate');
+		$("head link").addClass('notranslate');
+		$("footer").addClass('notranslate');
+		$("fieldset").addClass('notranslate');
+		$("iframe").addClass('notranslate');
+	});
+</script>
+<div id="google_translate_element"></div>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="./ext/phpbb/collapsiblecategories/styles/all/template/js/collapsiblecategories.js?assets_version=153"></script>
+<script src="./ext/kasimi/postnumbers/styles/all/template/postnumbers.js?assets_version=153"></script>
+<script src="./styles/prosilver/template/forum_fn.js?assets_version=153"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=153"></script>
+
+
+	<script>
+	var postNumbers = {
+		lang: {
+			copied			: 'Copied\u0021',
+			copyManually	: 'Copy\u0020to\u0020clipboard\u003A\u0020Ctrl\/Cmd\u002BC,\u0020Enter'
+		}
+	};
+</script>
+
+</body>
+</html>

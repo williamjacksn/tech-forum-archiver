@@ -1,0 +1,37 @@
+[project]
+name = "tech-forum-archiver"
+version = "2026.0"
+description = "Archive the public Tech Forum at tech.churchofjesuschrist.org into SQLite"
+readme = "README.md"
+authors = [
+    { name = "William Jackson", email = "william@subtlecoolness.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "htpy>=26.5.1",
+    "httpx>=0.28.1",
+    "truststore>=0.10.5",
+    "tzdata>=2026.6",
+]
+
+[project.scripts]
+tech-forum-archiver = "tech_forum_archiver:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+    "ty>=0.0.99",
+]
+
+[tool.ruff.lint]
+extend-select = ["ANN", "DTZ", "E", "F", "FURB", "I", "ICN", "PERF", "Q", "RSE", "RUF", "S", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# pytest is built on plain assert statements
+"tests/**" = ["S101"]
